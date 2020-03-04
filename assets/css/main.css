@@ -45,9 +45,12 @@ a {
 }
 
 
-/*----------------------
-	2. Header area
-------------------------*/
+/*
+* ----------------------------------------------------------------------------------------
+*   Header
+* ----------------------------------------------------------------------------------------
+*
+*/
 
 .header-area {
     left: 0;
@@ -69,9 +72,12 @@ a {
 }
 
 
-/*----------------------
-	3. slider area
-------------------------*/
+/*
+* ----------------------------------------------------------------------------------------
+*   Slider
+* ----------------------------------------------------------------------------------------
+*
+*/
 
 .slider-area::before {
     background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
@@ -110,7 +116,7 @@ a {
 
 .slider-title h1 {
     color: #ffffff;
-    font-size: 37px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 10px;
     text-transform: capitalize;
@@ -268,6 +274,14 @@ ul.about-info li span:first-child {
     font-weight: 600;
     color: #000000;
     width: 130px;
+}
+
+.user-image {
+    background-image: url('../img/user1.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 20px;
 }
 
 
