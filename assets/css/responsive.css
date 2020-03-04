@@ -9,6 +9,7 @@
         text-align: center;
     }
     .nav-item a:hover {
+        color: white;
         background: #3f6ad8;
     }
 }
