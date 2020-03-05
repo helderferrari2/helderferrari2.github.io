@@ -6,8 +6,6 @@
 */
 
 body,
-ul,
-li,
 p,
 a {
     margin: 0px;
@@ -20,16 +18,13 @@ body {
     color: #464646;
 }
 
-ul {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
 }
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -52,23 +47,48 @@ a {
 *
 */
 
-.header-area {
-    left: 0;
-    padding: 30px 0;
-    position: absolute;
-    right: 0;
-    top: 0px;
-    z-index: 5;
+.navbar {
+    transition: all 0.4s;
 }
 
-.nav-item a:hover {
-    /* color: #3f6ad8 !important; */
-    color: transparent;
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar i {
+    color: white;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: white;
     background: #3f6ad8;
+    text-decoration: none;
 }
 
-.nav-link {
-    color: white !important;
+.navbar .navbar-brand {
+    color: white;
+}
+
+
+/* Change navbar styling on scroll */
+
+.navbar.active {
+    background: rgba(0, 0, 0, 0.80);
+}
+
+.navbar.active .nav-link {
+    color: white;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: white;
 }
 
 
@@ -137,6 +157,10 @@ a {
 
 .slider-icon {
     margin-top: 35px;
+}
+
+.slider-icon ul {
+    padding-left: 0;
 }
 
 .slider-icon li {
@@ -261,6 +285,7 @@ a {
 
 .about {
     margin-top: 60px;
+    transition: all 1000ms ease 0s;
 }
 
 ul.about-info {
@@ -363,26 +388,51 @@ ul.timeline>li:before {
     margin-top: 60px;
 }
 
-.skills-item p {
-    font-weight: bold;
-    padding-top: 5px;
+.custom-card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 30px 0 30px 0;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
-.certifications ul {
-    list-style: disc;
-    padding-left: 3em;
+.custom-card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
+.custom-card ul {
+    list-style: none;
+    padding: 0;
+    max-width: 240px;
+    margin: 10px auto;
+}
 
-/*
-* ----------------------------------------------------------------------------------------
-*   Contact
-* ----------------------------------------------------------------------------------------
-*
-*/
+.custom-card ul li {
+    color: #3C4857;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
 
-.contact {
-    margin-top: 60px;
+.custom-card ul li:last-child {
+    border-bottom: none;
+}
+
+.align-flex-end {
+    align-items: flex-end;
+}
+
+.badge {
+    font-size: 1.5em !important;
+    color: #fff !important;
+    padding: 10px !important;
+}
+
+.bg-primary {
+    background-color: #3f6ad8 !important;
 }
 
 
