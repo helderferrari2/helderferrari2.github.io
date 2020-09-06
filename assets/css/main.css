@@ -8,25 +8,24 @@
 body,
 p,
 a {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    font-family: "Nunito", Helvetica, Arial, sans-serif;
-    background: white;
-    color: #464646;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  background: white;
+  color: #464646;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 * {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -36,9 +35,13 @@ a {
 */
 
 .wrapper {
-    margin: 0;
+  margin: 0;
 }
 
+section {
+  height: 100vh;
+  padding: 70px 0;
+}
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -48,49 +51,47 @@ a {
 */
 
 .navbar {
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .navbar .nav-link {
-    color: white;
+  color: white;
 }
 
 .navbar i {
-    color: white;
+  color: white;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: white;
-    background: #3f6ad8;
-    text-decoration: none;
+  color: white;
+  background: #3f6ad8;
+  text-decoration: none;
 }
 
 .navbar .navbar-brand {
-    color: white;
+  color: white;
 }
-
 
 /* Change navbar styling on scroll */
 
 .navbar.active {
-    background: rgba(0, 0, 0, 0.80);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar.active .nav-link {
-    color: white;
+  color: white;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: white;
+  color: white;
 }
-
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -100,181 +101,178 @@ a {
 */
 
 .slider-area::before {
-    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .single-slider {
-    background-image: url('../img/cover.jpg');
-    background-position: center center;
-    background-size: cover;
-    z-index: 1;
+  background-image: url("../img/cover.jpg");
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
 }
 
 .single-slider-all {
-    color: #fff;
-    position: relative;
-    z-index: 1;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .height-100vh .container {
-    display: table;
-    height: 100%;
+  display: table;
+  height: 100%;
 }
 
 .height-100vh .container .slider-middle {
-    display: table-cell;
-    height: 100%;
-    vertical-align: middle;
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
 }
 
 .slider-title h1 {
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-    overflow: hidden;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  overflow: hidden;
 }
 
 .slider-title h2 {
-    color: #fff;
-    font-size: 65px;
-    font-weight: 700;
-    line-height: 75px;
-    text-transform: capitalize;
+  color: #fff;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: capitalize;
 }
 
 .slider-title h2 span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .slider-icon {
-    margin-top: 35px;
+  margin-top: 35px;
 }
 
 .slider-icon ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .slider-icon li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .slider-icon li a {
-    color: #fff;
-    display: block;
-    font-size: 2em;
-    margin: 0px 10px;
+  color: #fff;
+  display: block;
+  font-size: 2em;
+  margin: 0px 10px;
 }
 
 .slider-icon li a:hover {
-    color: #999;
+  color: #999;
 }
 
 .scroll-icon a {
-    border: 1px solid #fff;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 25px;
-    padding: 25px 10px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 25px;
+  padding: 25px 10px;
 }
 
-
 /* responsive media queries */
-
 
 /* Mouse scroll effect */
 
 .mouse {
-    position: absolute;
-    bottom: 40px;
-    z-index: 5;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    display: block;
+  position: absolute;
+  bottom: 40px;
+  z-index: 5;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: block;
 }
 
 .mouse .mouse-icon {
-    display: block;
-    width: 25px;
-    height: 45px;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    border-radius: 15px;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
+  display: block;
+  width: 25px;
+  height: 45px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .mouse .mouse-wheel {
-    height: 4px;
-    margin: 2px auto 0;
-    display: block;
-    width: 4px;
-    background-color: white;
-    border-radius: 50%;
-    -webkit-animation: 1.6s ease infinite wheel-up-down;
-    -moz-animation: 1.6s ease infinite wheel-up-down;
-    animation: 1.6s ease infinite wheel-up-down;
+  height: 4px;
+  margin: 2px auto 0;
+  display: block;
+  width: 4px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-animation: 1.6s ease infinite wheel-up-down;
+  -moz-animation: 1.6s ease infinite wheel-up-down;
+  animation: 1.6s ease infinite wheel-up-down;
 }
 
 .mouse:hover .mouse-icon {
-    border-color: #fff;
+  border-color: #fff;
 }
 
 @-webkit-keyframes wheel-up-down {
-    0% {
-        margin-top: 2px;
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        margin-top: 20px;
-        opacity: 0;
-    }
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
 }
 
 @-moz-keyframes wheel-up-down {
-    0% {
-        margin-top: 2px;
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        margin-top: 20px;
-        opacity: 0;
-    }
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
 }
 
 @keyframes wheel-up-down {
-    0% {
-        margin-top: 2px;
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        margin-top: 20px;
-        opacity: 0;
-    }
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
 }
-
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -284,31 +282,30 @@ a {
 */
 
 .about {
-    margin-top: 60px;
-    transition: all 1000ms ease 0s;
+  /* margin-top: 60px; */
+  transition: all 1000ms ease 0s;
 }
 
 ul.about-info {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 ul.about-info li span:first-child {
-    font-weight: 600;
-    color: #000000;
-    width: 130px;
+  font-weight: 600;
+  color: #000000;
+  width: 130px;
 }
 
 .user-image {
-    background-image: url('../img/user1.jpg');
-    background-position: center center;
-    background-size: cover;
-    height: 500px;
-    margin-top: 20px;
+  background-image: url("../img/user1.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+  margin-top: 20px;
 }
-
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -318,64 +315,62 @@ ul.about-info li span:first-child {
 */
 
 .resume {
-    margin-top: 60px;
-    padding: 20px 0 20px 0;
+  /* margin-top: 60px; */
+  padding: 20px 0 20px 0;
 }
 
 .resume-bg {
-    background: #F5F6F8;
+  background: #f5f6f8;
 }
 
 .resume-wrap {
-    width: 100%;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .resume-wrap .date {
-    font-weight: 700;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.6);
-    color: #3f6ad8;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  color: #3f6ad8;
 }
-
 
 /* Timeline*/
 
 ul.timeline {
-    list-style-type: none;
-    position: relative;
+  list-style-type: none;
+  position: relative;
 }
 
 ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 1;
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 1;
 }
 
-ul.timeline>li {
-    margin: 20px 0;
-    padding-left: 50px;
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 50px;
 }
 
-ul.timeline>li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #3f6ad8;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 1;
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #3f6ad8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
 }
-
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -385,56 +380,55 @@ ul.timeline>li:before {
 */
 
 .skills {
-    margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .custom-card {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    margin: 30px 0 30px 0;
-    border-radius: 6px;
-    color: rgba(0, 0, 0, 0.87);
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, .1);
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 30px 0 30px 0;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .custom-card:hover {
-    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 .custom-card ul {
-    list-style: none;
-    padding: 0;
-    max-width: 240px;
-    margin: 10px auto;
+  list-style: none;
+  padding: 0;
+  max-width: 240px;
+  margin: 10px auto;
 }
 
 .custom-card ul li {
-    color: #3C4857;
-    text-align: center;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+  color: #3c4857;
+  text-align: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
 }
 
 .custom-card ul li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .align-flex-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .badge {
-    font-size: 1.5em !important;
-    color: #fff !important;
-    padding: 10px !important;
+  font-size: 1.5em !important;
+  color: #fff !important;
+  padding: 10px !important;
 }
 
 .bg-primary {
-    background-color: #3f6ad8 !important;
+  background-color: #3f6ad8 !important;
 }
-
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -444,14 +438,13 @@ ul.timeline>li:before {
 */
 
 .footer {
-    margin-top: 60px;
-    display: block;
-    text-align: center;
-    background: #000000;
-    color: white;
-    padding: 50px;
+  /* margin-top: 60px; */
+  display: block;
+  text-align: center;
+  background: #000000;
+  color: white;
+  padding: 50px;
 }
-
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -460,55 +453,54 @@ ul.timeline>li:before {
 *
 */
 
-
 /* Blinking Effect*/
 
 .blinking {
-    animation: blinkingText 1.2s infinite;
+  animation: blinkingText 1.2s infinite;
 }
 
 @keyframes blinkingText {
-    0% {
-        color: white;
-    }
-    49% {
-        color: white;
-    }
-    60% {
-        color: transparent;
-    }
-    99% {
-        color: transparent;
-    }
-    100% {
-        color: white;
-    }
+  0% {
+    color: white;
+  }
+  49% {
+    color: white;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: white;
+  }
 }
 
 .height-100vh {
-    height: 100vh;
+  height: 100vh;
 }
 
 .custom-title {
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
 }
 
 h2 {
-    padding-top: 20px;
-    font-size: 24px;
-    font-weight: 700;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 h4 {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
 }
 
 h5 {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
 }
