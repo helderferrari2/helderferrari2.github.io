@@ -30,6 +30,8 @@
     <!--Responsive CSS-->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Helder Ferrari - Portfolio</title>
 
     <meta property="og:type" content="website" />
@@ -83,10 +85,10 @@
         <div class="single-slider height-100vh">
             <div class="container">
                 <div class="slider-middle">
-                    <div class="single-slider-all">
+                    <div class="single-slider-all" data-aos="fade-up">
                         <div class="slider-title">
                             <h1>Hello I'm Hélder</h1>
-                            <h2>Web Developer</h2>
+                            <h2>&lt; Web Developer / &gt;</h2>
                         </div>
                         <div class="slider-icon">
                             <ul>
@@ -114,7 +116,7 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="fade-right">
                     <h1 class="title">About me</h1>
                     <div class="my-4">
                         <p>My name is Hélder Ferrari Harayashiki, I'm a web developer from Brazil.</p>
@@ -135,7 +137,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Address:</th>
-                                <td>Curitiba/PR, Brazi</td>
+                                <td>Curitiba/PR, Brazil</td>
                             </tr>
                             <tr>
                                 <th scope="row">Email:</th>
@@ -163,7 +165,7 @@
                     </table>
 
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-left">
                     <div class="user-image"></div>
                 </div>
             </div>
@@ -174,10 +176,10 @@
     <!--Resume-->
     <section id="resume" class="bg-light">
         <div class="container">
-            <h1 class="title">Resume</h1>
+            <h1 class="title" data-aos="fade-right">Resume</h1>
             <div class="row">
                 <!--Experience-->
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Experience</h2>
                     <ul class="timeline">
                         <li>
@@ -204,7 +206,7 @@
                 </div>
 
                 <!--Education-->
-                <div class="col">
+                <div class="col" data-aos="fade-up">
                     <h2>Education</h2>
                     <ul class="timeline">
                         <li>
@@ -226,7 +228,7 @@
                 </div>
 
                 <!--Certifications-->
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="3000">
                     <h2>Certifications</h2>
                     <div class="certifications">
                         <ul>
@@ -244,8 +246,8 @@
     <!--Skills-->
     <section id="skills">
         <div class="container">
-            <h1 class="title">Skills & Tools</h1>
-            <div class="row align-flex-end">
+            <h1 class="title" data-aos="fade-right">Skills & Tools</h1>
+            <div class="row align-flex-end" data-aos="fade-up">
                 <!--Front End-->
                 <div class="col-lg-4">
                     <h2 class="text-center">Frontend</h2>
@@ -306,8 +308,8 @@
 
     <!--Portfolio-->
     <section id="portfolio" class="bg-light">
-        <h1 class="title">Portfolio</h1>
-        <div class="container">
+        <h1 class="title" data-aos="fade-right">Portfolio</h1>
+        <div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card mb-4">
@@ -403,6 +405,7 @@
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/packages/frescojs/js/fresco.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--Custom JS-->
     <script src="assets/js/main.js"></script>
