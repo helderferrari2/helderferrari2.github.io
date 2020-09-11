@@ -10,278 +10,412 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    </link>
 
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700&display=swap" rel="stylesheet">
 
+    <!--Lightbox-->
+    <link rel="stylesheet" type="text/css" href="./assets/packages/frescojs/css/fresco.css" />
+
     <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    </link>
 
     <!--Responsive CSS-->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <title>HelderFerrari2</title>
+    <title>Helder Ferrari - Portfolio</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Helder Ferrari - Portfolio" />
+    <meta property="og:description" content="Web developer Portfolio" />
+    <meta property="og:url" content="https://helderferrari2.github.io/" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav" data-offset="20">
 
-    <div class="wrapper">
-
-        <!-- Header Area
-            ============================================ -->
-        <header class="header">
-            <nav class="navbar navbar-expand-lg fixed-top py-3">
-                <div class="container">
-                    <a class="navbar-brand" href="#">Hello World<span class="blinking">_</span></a>
-                    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#resume">Resume</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">Skills</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-
-
-
-        <!-- Home Area
-                ============================================ -->
-        <div id="home-area" class="slider-area">
-            <div class="single-slider height-100vh">
-                <div class="container">
-                    <div class="slider-middle">
-                        <div class="single-slider-all">
-                            <div class="slider-title">
-                                <h2>Hello I'm Hélder
-                                </h2>
-                                <h1>
-                                    < Web Developer />
-                                </h1>
-                            </div>
-                            <div class="slider-icon">
-                                <ul>
-                                    <li><a href="https://github.com/helderferrari2" target="_blank"><i class="fab fa-github"></i></a></li>
-                                    <li><a href="https://twitter.com/helderferrari2" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/h%C3%A9lder-ferrari-harayashiki-959a98101/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#about" class="mouse smoothscroll">
-                    <span class="mouse-icon">
-                    <span class="mouse-wheel"></span>
-                    </span>
+    <!--Header-->
+    <header class="header">
+        <nav id="main-nav" class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    &lt; hf &gt;
+                    <span class="blinking">_</span>
                 </a>
 
-            </div>
-        </div>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
 
-        <!--Main content-->
-        <div class="container">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
 
-            <!--About-->
-            <section class="about" id="about">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h1 class="custom-title">About me</h1>
-                        <p>I am a Brazilian programmer who loves technologies.</p>
-                        <p>I have a lot of motivation to turn ideas into business, overcoming challenges and making dreams come true.</p>
-                        <ul class="about-info mt-3 px-md-0 px-2">
-                            <li class="d-flex"><span>Name:</span> <span>Hélder Ferrari Harayashiki</span></li>
-                            <li class="d-flex"><span>Date of birth:</span> <span>July 14, 1988</span></li>
-                            <li class="d-flex"><span>Address:</span> <span>Curitiba/PR, Brazil</span></li>
-                            <li class="d-flex"><span>Email:</span> <span>helderferrari2@gmail.com</span></li>
-                            <li class="d-flex"><span>Phone: </span> <span>+55 (41) 99549-1113</span></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="user-image"></div>
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            <!--End About-->
+            </div>
+        </nav>
+    </header>
+    <!--End Header-->
 
-        </div>
-
-        <!--Resume-->
-        <div class="container-fluid resume-bg">
+    <!--Banner-->
+    <div id="home" class="slider-area">
+        <div class="single-slider height-100vh">
             <div class="container">
-                <section class="resume" id="resume">
-                    <h1 class="custom-title">Resume</h1>
-
-                    <!--Education-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Education</h2>
-                            <div class="resume-wrap">
-                                <div class="text pl-3">
-                                    <span class="date">2019</span>
-                                    <h4>Language</h4>
-                                    <span>English Student at IW Curitiba</span>
-                                </div>
-                            </div>
-                            <div class="resume-wrap">
-                                <div class="text pl-3">
-                                    <span class="date">2017-2017</span>
-                                    <h4>FP73 - Web Development using PHP & MySql</h4>
-                                    <span>Caelum - Ensino e Inovação</span>
-                                </div>
-                            </div>
-                            <div class="resume-wrap">
-                                <div class="text pl-3">
-                                    <span class="date">2015-2015</span>
-                                    <h4>Administration of Symantec Endpoint Protection 12.1</h4>
-                                    <span>Symantec Training & Education Center</span>
-                                </div>
-                            </div>
-                            <div class="resume-wrap">
-                                <div class="text pl-3">
-                                    <span class="date">2010-2014</span>
-                                    <h4>Bachelor of Information Systems</h4>
-                                    <span>Universidade Bandeirantes de São Paulo</span>
-                                </div>
-                            </div>
+                <div class="slider-middle">
+                    <div class="single-slider-all">
+                        <div class="slider-title">
+                            <h1>Hello I'm Hélder</h1>
+                            <h2>Web Developer</h2>
                         </div>
-                    </div>
-
-                    <!-- EXPERIENCE -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Experience</h2>
-                            <ul class="timeline">
-                                <li>
-                                    <h5>Coddefy Soluções em Tecnologia</h5>
-                                    <span>2018-2019</span>
-                                    <p>BackEnd Developer</p>
-                                </li>
-                                <li>
-                                    <h5>Digisystem</h5>
-                                    <span>2013-2017</span>
-                                    <p>Information Security Support Analyst</p>
-                                </li>
+                        <div class="slider-icon">
+                            <ul>
+                                <li><a href="https://github.com/helderferrari2" target="_blank"><i
+                                            class="fab fa-github"></i></a></li>
+                                <li><a href="https://twitter.com/helderferrari2" target="_blank"><i
+                                            class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/h%C3%A9lder-ferrari-harayashiki-959a98101/"
+                                        target="_blank"><i class="fab fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+            <a href="#about" class="mouse">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+            </a>
+        </div>
+    </div>
+    <!--End Banner-->
 
-                    <!--Certifications-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Certifications</h2>
-                            <div class="list-style">
-                                <ul>
-                                    <li>ISO 27002 - Information Security Foundation Based on ISO/IEC 27002</li>
-                                    <li>Symantec Endpoint Protection 14, Configure and Install</li>
-                                    <li>250-315: SCS - Administration of Symantec Endpoint Protection 12.1</li>
-                                </ul>
-                            </div>
-                        </div>
+    <!--About-->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="title">About me</h1>
+                    <div class="my-4">
+                        <p>My name is Hélder Ferrari Harayashiki, I'm a web developer from Brazil.</p>
+                        <p>I've been spending my time in the last 3 years studying new technologies and trends, in order
+                            to
+                            be able to turn your ideas into a business, safely, quickly, and reliably.</p>
                     </div>
-                </section>
 
+                    <table class="table borderless table-sm">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Name:</th>
+                                <td>Hélder Ferrari Harayashiki</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Date of Birth:</th>
+                                <td>July 14, 1988</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Address:</th>
+                                <td>Curitiba/PR, Brazi</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email:</th>
+                                <td>helderferrari2@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Phone:</th>
+                                <td>+55 (41) 99549-1113</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Languages</h2>
+                    <table class="table borderless table-sm">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Portuguese:</th>
+                                <td>Native</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">English:</th>
+                                <td>Intermediate</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="user-image"></div>
+                </div>
             </div>
         </div>
-        <!--End Resume-->
+    </section>
+    <!--End About-->
 
-        <!--Skill-->
+    <!--Resume-->
+    <section id="resume" class="bg-light">
         <div class="container">
-            <section class="skills text-center" id="skills">
-                <h1 class="custom-title">Skills & Tools</h1>
-                <div class="row align-flex-end">
+            <h1 class="title">Resume</h1>
+            <div class="row">
+                <!--Experience-->
+                <div class="col">
+                    <h2>Experience</h2>
+                    <ul class="timeline">
+                        <li>
+                            <div class="text-topic text-primary">2020-Present</div>
+                            <div class="subtitle">Freelancer</div>
+                            <div>Backend Developer</div>
+                        </li>
+                        <li>
+                            <div class="text-topic text-primary">2019-2020</div>
+                            <div class="subtitle">Nineworphi</div>
+                            <div>Backend Developer</div>
+                        </li>
+                        <li>
+                            <div class="text-topic text-primary">2018-2019</div>
+                            <div class="subtitle">Coddefy</div>
+                            <div>Backend Developer</div>
+                        </li>
+                        <li>
+                            <div class="text-topic text-primary">2013-2017</div>
+                            <div class="subtitle">Digisystem - IT solutions</div>
+                            <div>Information Security Support Analyst jr.</div>
+                        </li>
+                    </ul>
+                </div>
 
-                    <!--Front End-->
-                    <div class="col-lg-4">
-                        <div class="custom-card">
-                            <div class="table">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>Jquery</li>
-                                    <li>Bootstrap</li>
-                                    <li>VueJs</li>
-                                </ul>
-                                <span class="badge badge-pill bg-primary">Frontend</span>
-                            </div>
+                <!--Education-->
+                <div class="col">
+                    <h2>Education</h2>
+                    <ul class="timeline">
+                        <li>
+                            <div class="text-topic text-primary">2019-Present</div>
+                            <div class="subtitle">Language</div>
+                            <div>English Student at IW Curitiba</div>
+                        </li>
+                        <li>
+                            <div class="text-topic text-primary">2017-2017</div>
+                            <div class="subtitle">FP73 - Web Development using PHP & MySql</div>
+                            <div>Caelum - Ensino e Inovação</div>
+                        </li>
+                        <li>
+                            <div class="text-topic text-primary">2010-2014</div>
+                            <div class="subtitle">Bachelor of Information Systems</div>
+                            <div>Universidade Bandeirantes de São Paulo - Uniban</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Certifications-->
+                <div class="col">
+                    <h2>Certifications</h2>
+                    <div class="certifications">
+                        <ul>
+                            <li>ISO 27002 - Information Security Foundation Based on ISO/IEC 27002</li>
+                            <li>Symantec Endpoint Protection 14, Configure and Install</li>
+                            <li>250-315: SCS - Administration of Symantec Endpoint Protection 12.1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Resume-->
+
+    <!--Skills-->
+    <section id="skills">
+        <div class="container">
+            <h1 class="title">Skills & Tools</h1>
+            <div class="row align-flex-end">
+                <!--Front End-->
+                <div class="col-lg-4">
+                    <h2 class="text-center">Frontend</h2>
+                    <div class="custom-card">
+                        <div class="table">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Jquery</li>
+                                <li>Bootstrap</li>
+                                <li>Sass</li>
+                                <li>VueJs</li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <!--Back End-->
-                    <div class="col-lg-4">
-                        <div class="custom-card">
-                            <div class="table">
-                                <ul>
-                                    <li>PHP</li>
-                                    <li>MySql</li>
-                                    <li>API</li>
-                                    <li>OAuth</li>
-                                    <li>JWT</li>
-                                    <li>Laravel</li>
-                                    <li>Codeigniter</li>
-                                </ul>
-                                <span class="badge badge-pill bg-primary">Backend</span>
-                            </div>
+                <!--Back End-->
+                <div class="col-lg-4">
+                    <h2 class="text-center">Backend</h2>
+                    <div class="custom-card">
+                        <div class="table">
+                            <ul>
+                                <li>PHP</li>
+                                <li>MySql</li>
+                                <li>Restful API</li>
+                                <li>OAuth / JWT</li>
+                                <li>Laravel</li>
+                                <li>Codeigniter</li>
+                                <li>OOP</li>
+                                <li>TDD</li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <!--Others-->
-                    <div class="col-lg-4">
-                        <div class="custom-card">
-                            <div class="table">
-                                <ul>
-                                    <li>Git</li>
-                                    <li>Terminal</li>
-                                    <li>Linux</li>
-                                    <li>Apache</li>
-                                    <li>Ajax</li>
-                                    <li>OOP</li>
-                                </ul>
-                                <span class="badge badge-pill bg-primary">Others</span>
+                <!--Others-->
+                <div class="col-lg-4">
+                    <h2 class="text-center">Others</h2>
+                    <div class="custom-card">
+                        <div class="table">
+                            <ul>
+                                <li>Git/Gitflow</li>
+                                <li>Command Line</li>
+                                <li>Linux</li>
+                                <li>Apache</li>
+                                <li>Scrum/Agile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--End Skills-->
+
+    <!--Portfolio-->
+    <section id="portfolio" class="bg-light">
+        <h1 class="title">Portfolio</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <img src="./assets/img/projects/acheimeuequipo/banner.png" class="card-img-top" alt="..."
+                            style="width: 100%; height: 225px;">
+                        <div class="card-body">
+                            <h5>Achei Meu Equipo</h5>
+                            <p class="card-text">A lost and found website that helps musicians to buy equipments.</p>
+                            <div class="my-2">
+                                <span class="badge badge-pill badge-dark">Laravel</span>
+                                <span class="badge badge-pill badge-dark">Restful Api</span>
+                                <span class="badge badge-pill badge-dark">Mysql</span>
+                                <span class="badge badge-pill badge-dark">VueJs</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-3">
+                                <button id="gallery1" type="button" class="btn btn-outline-primary ">View
+                                    Project</button>
+                                <a class="btn btn-outline-primary" href="http://acheimeuequipo.com.br/"
+                                    target="_blank">Visit
+                                    Site</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </section>
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <img src="assets/img/projects/larachat/banner.png" class="card-img-top" alt="..."
+                            style="width: 100%; height: 225px;">
+                        <div class="card-body">
+                            <h5>Larachat</h5>
+                            <p class="card-text">A Simple real time chat, made using Laravel, Mysql and Pusher.
+                            </p>
+                            <div class="my-2">
+                                <span class="badge badge-pill badge-dark">Laravel</span>
+                                <span class="badge badge-pill badge-dark">VueJs</span>
+                                <span class="badge badge-pill badge-dark">Echo</span>
+                                <span class="badge badge-pill badge-dark">PusherJs</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-3">
+                                <button id="gallery2" type="button" class="btn btn-outline-primary">View
+                                    Project</button>
+                                <a class="btn btn-outline-primary" href="https://github.com/helderferrari2/larachat"
+                                    target="_blank">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <img src="assets/img/projects/ninecontrol/banner.png" class="card-img-top" alt="..."
+                            style="width: 100%; height: 225px;">
+                        <div class="card-body">
+                            <h5>Ninecontrol</h5>
+                            <p class="card-text">A flexible, multilanguage and multipurpose powerful CRM.
+                            </p>
+                            <div class="my-2">
+                                <span class="badge badge-pill badge-dark">Laravel</span>
+                                <span class="badge badge-pill badge-dark">Mysql</span>
+                                <span class="badge badge-pill badge-dark">Restful API</span>
+                                <span class="badge badge-pill badge-dark">ReactJs</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-3">
+                                <button id="gallery3" type="button" class="btn btn-outline-primary">View
+                                    Project</button>
+                                <a class="btn btn-outline-primary" href="http://app.ninecontrol.com.br/"
+                                    target="_blank">Visit
+                                    Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
         </div>
-        <!--End Skills-->
 
-        <!--Footer-->
-        <footer class="footer">
-            <p>©
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>, Helder F. All rights reserved.</p>
-        </footer>
-        <!--End Footer-->
+    </section>
+    <!--End About-->
 
-    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <p>©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>, Helder F. All rights reserved.</p>
+    </footer>
+    <!--End Footer-->
 
     <!-- Bootstrap 4 -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/packages/frescojs/js/fresco.min.js"></script>
 
     <!--Custom JS-->
     <script src="assets/js/main.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177790309-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177790309-1');
+    </script>
 
 </body>
 
