@@ -51,4 +51,10 @@ $(document).ready(function () {
         }
     }
 
+    //Animations
+    AOS.init({
+        disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        duration: 2000, // values from 0 to 3000, with step 50ms
+    });
+
 })
